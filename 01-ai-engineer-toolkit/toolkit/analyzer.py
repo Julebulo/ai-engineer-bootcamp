@@ -1,7 +1,7 @@
 from toolkit.reader import read_file
 
-def stats_file(file_path):
-    content = read_file(file_path)
+def analyze_text(text):
+    content = read_file(text)
     characters = len(content)
     words = len(content.split())
     lines = len(content.splitlines())
