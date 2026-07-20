@@ -1,10 +1,9 @@
 from toolkit.reader import read_file
 
 def analyze_text(text):
-    content = read_file(text)
-    characters = len(content)
-    words = len(content.split())
-    lines = len(content.splitlines())
+    characters = len(text)
+    words = len(text.split())
+    lines = len(text.splitlines())
     result = {
         "characters": characters,
         "words": words,
