@@ -1,5 +1,3 @@
-from toolkit.reader import read_file
-
 def analyze_text(text):
     characters = len(text)
     words = len(text.split())
