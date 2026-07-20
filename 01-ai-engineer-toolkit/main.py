@@ -2,6 +2,7 @@ import sys
 
 from toolkit.reader import read_file
 from toolkit.analyzer import analyze_text
+from toolkit.formatter import print_dict
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
@@ -11,4 +12,4 @@ if __name__ == "__main__":
     file_path = sys.argv[1]
     text = read_file(file_path)
     stats = analyze_text(text)
-    print(stats)
+    print_dict(stats)
