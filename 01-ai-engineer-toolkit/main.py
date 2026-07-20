@@ -1,5 +1,6 @@
 import sys
-import toolkit.reader
+
+from toolkit.reader import read_file
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
@@ -7,5 +8,5 @@ if __name__ == "__main__":
         sys.exit(1)
 
     file_path = sys.argv[1]
-    data = toolkit.reader.reader(file_path)
+    data = read_file(file_path)
     print(data)

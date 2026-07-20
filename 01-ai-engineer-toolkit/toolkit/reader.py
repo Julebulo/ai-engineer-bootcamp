@@ -1,4 +1,4 @@
-def reader(file_path):
+def read_file(file_path):
     with open(file_path, 'r') as file:
-        read_data = file.read()
-    return read_data
+        content = file.read()
+    return content
